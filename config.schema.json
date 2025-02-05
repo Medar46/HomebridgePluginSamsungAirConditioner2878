@@ -1,5 +1,5 @@
 {
-  pluginAlias": "GREEAirConditioner",
+  "pluginAlias": "SamsungAirConditioner",
   "pluginType": "platform",
   "singular": true,
   "schema": {
@@ -8,32 +8,30 @@
       "name": {
         "type": "string",
         "required": true,
-        "default": "GREE Air Conditioner"
-          },
-          "accessory": {
-            "type": "string",
-            "default": "Samsung Air Conditioner"
-          },
-          "ip_address": {
-            "type": "string",
-            "format": "ipv4",
-            "description": "The IP address of the accessory."
-          },
-          "mac": {
-            "type": "string",
-            "description": "The MAC address of the accessory."
-          },
-          "token": {
-            "type": "string",
-            "description": "The token for authentication."
-          },
-          "skip_certificate": {
-            "type": "boolean",
-            "description": "Flag to skip certificate validation."
-          }
-        },
-        "required": ["name", "accessory", "ip_address", "mac", "token", "skip_certificate"]
+        "default": "Samsung Air Conditioner"
+      },
+      "accessory": {
+        "type": "string",
+        "default": "Samsung Air Conditioner"
+      },
+      "ip_address": {
+        "type": "string",
+        "format": "ipv4",
+        "description": "The IP address of the accessory."
+      },
+      "mac": {
+        "type": "string",
+        "description": "The MAC address of the accessory."
+      },
+      "token": {
+        "type": "string",
+        "description": "The token for authentication."
+      },
+      "skip_certificate": {
+        "type": "boolean",
+        "description": "Flag to skip certificate validation."
       }
-    }
+    },
+    "required": ["name", "accessory", "ip_address", "mac", "token", "skip_certificate"]
   }
 }
