@@ -19,7 +19,7 @@
     "node": ">=0.8",
     "homebridge": ">=0.1"
   },
-  "author": "Sebastian Osiński",
+  "author": "Medar46",
   "license": "MIT",
   "dependencies": {
     "carrier": "^0.3.0",
