@@ -1,6 +1,8 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Samsung Air Conditioner Configuration",
+    "pluginAlias": "SamsungAirConditioner",
+    "pluginType": "platform",
+    "singular": true,
     "type": "object",
     "properties": {
         "accessories": {
@@ -8,13 +10,14 @@
             "items": {
                 "type": "object",
                 "properties": {
-                    "accessory": {
-                        "type": "string",
-                        "description": "The accessory type, e.g. 'Samsung Air Conditioner'."
-                    },
                     "name": {
                         "type": "string",
-                        "description": "The name of the accessory."
+                        "required": true,
+                        "default": "Samsung Air Conditioner"
+                    },
+                    "accessory": {
+                        "type": "string",
+                        "default": "Samsung Air Conditioner"
                     },
                     "ip_address": {
                         "type": "string",
@@ -34,7 +37,7 @@
                         "description": "Flag to skip certificate validation."
                     }
                 },
-                "required": ["accessory", "name", "ip_address", "mac", "token", "skip_certificate"]
+                "required": ["name", "accessory", "ip_address", "mac", "token", "skip_certificate"]
             }
         }
     },
