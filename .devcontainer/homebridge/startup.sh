@@ -16,4 +16,4 @@ cd /workspace
 npm link
 
 cd /homebridge
-npm link homebridge-plugin-samsung-air-conditioner
+npm link homebridge-plugin-samsung-air-conditioner2878
