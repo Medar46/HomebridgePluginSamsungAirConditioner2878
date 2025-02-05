@@ -16,8 +16,8 @@
   ],
   "homepage": "https://github.com/Medar46/HomebridgePluginSamsungAirConditioner2878",
   "engines": {
-    "node": ">=0.8",
-    "homebridge": ">=0.1"
+    "node": "^18.15.0 || ^20.7.0 || ^22",
+    "homebridge": "^1.8.0 || ^2.0.0-beta.0"
   },
   "author": "Medar46",
   "license": "MIT",
