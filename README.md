@@ -1,0 +1,1 @@
+# HomebridgePluginSamsungAirConditioner2878
