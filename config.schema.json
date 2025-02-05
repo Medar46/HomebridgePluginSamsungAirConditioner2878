@@ -1,19 +1,14 @@
 {
-  "pluginAlias": "SamsungAirConditioner",
-  "pluginType": "accessory",
+  pluginAlias": "GREEAirConditioner",
+  "pluginType": "platform",
   "singular": true,
-  "type": "object",
-  "properties": {
-    "accessories": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string",
-            "required": true,
-            "default": "Samsung Air Conditioner",
-            "description": "The name of the accessory."
+  "schema": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "required": true,
+        "default": "GREE Air Conditioner"
           },
           "accessory": {
             "type": "string",
@@ -40,6 +35,5 @@
         "required": ["name", "accessory", "ip_address", "mac", "token", "skip_certificate"]
       }
     }
-  },
-  "required": ["accessories"]
+  }
 }
