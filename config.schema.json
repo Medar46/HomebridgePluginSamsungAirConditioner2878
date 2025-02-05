@@ -1,0 +1,42 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Samsung Air Conditioner Configuration",
+    "type": "object",
+    "properties": {
+        "accessories": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "accessory": {
+                        "type": "string",
+                        "description": "The accessory type, e.g. 'Samsung Air Conditioner'."
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "The name of the accessory."
+                    },
+                    "ip_address": {
+                        "type": "string",
+                        "format": "ipv4",
+                        "description": "The IP address of the accessory."
+                    },
+                    "mac": {
+                        "type": "string",
+                        "description": "The MAC address of the accessory."
+                    },
+                    "token": {
+                        "type": "string",
+                        "description": "The token for authentication."
+                    },
+                    "skip_certificate": {
+                        "type": "boolean",
+                        "description": "Flag to skip certificate validation."
+                    }
+                },
+                "required": ["accessory", "name", "ip_address", "mac", "token", "skip_certificate"]
+            }
+        }
+    },
+    "required": ["accessories"]
+}
