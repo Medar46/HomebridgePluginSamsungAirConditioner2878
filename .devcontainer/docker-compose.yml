@@ -1,7 +1,7 @@
-version: '2'
+version: '3.8'
 services:
   homebridge:
-    image: oznu/homebridge:latest
+    image: homebridge/homebridge:latest
     restart: always
     network_mode: host
     volumes:
@@ -10,5 +10,5 @@ services:
     logging:
       driver: json-file
       options:
-        max-size: "10mb"
+        max-size: "10m"
         max-file: "1"
