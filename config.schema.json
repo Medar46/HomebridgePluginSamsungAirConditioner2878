@@ -29,7 +29,8 @@
       },
       "skip_certificate": {
         "type": "boolean",
-        "description": "Flag to skip certificate validation."
+        "description": "Flag to skip certificate validation.",
+        "default": false
       }
     },
     "required": ["name", "accessory", "ip_address", "mac", "token"]
