@@ -3,6 +3,8 @@
 Homebridge plugin for controlling Samsung Air Conditioner working on port 2878. Allows to control AC with HomeKit and Siri.
 If you have Samsung AC which operates on port 8888, check this plugin instead: https://github.com/cicciovo/homebridge-samsung-airconditioner
 
+[![npm version](https://badge.fury.io/js/homebridge-plugin-samsung-air-conditioner2878.svg)](https://badge.fury.io/js/homebridge-plugin-samsung-air-conditioner2878)
+
 ## Installation
 1. Install [Homebridge](https://github.com/nfarina/homebridge).
 2. Install this plugin by running `npm install -g homebridge-plugin-samsung-air-conditioner2878`.
