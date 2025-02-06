@@ -48,4 +48,4 @@ If you have Samsung AC which operates on port 8888, check this plugin instead: h
 If your device's number is not on the list but you have tested it and it works, please make a PR with your device's number.
 
 ## Acknowledgment
-This project is heavily based on awesome work of CloCkWeRX - https://github.com/CloCkWeRX/node-samsung-airconditioner
+This project is heavily based on 95% of work of Sebastian Osinski - https://github.com/SebastianOsinski/HomebridgePluginSamsungAirConditioner
