@@ -1,32 +1,18 @@
 {
     "bridge": {
         "name": "Homebridge",
-        "username": "0E:DD:44:2D:B4:4E",
-        "port": 51240,
-        "pin": "980-48-662",
-        "advertiser": "ciao"
+        "username": "CC:22:3D:E3:CE:30",
+        "port": 51826,
+        "pin": "031-45-154"
     },
     "accessories": [
         {
-            "name": "Samsung Air Conditioner",
-            "accessory": "SamsungAirConditioner",
-            "ip_address": "192.168.178.29",
-            "mac": "BC:8C:CD:BC:8C:BA",
-            "token": "d89bf525-1e21-4394-b506-f74e85429bc1",
-            "skip_certificate": false
-        }
-    ],
-    "platforms": [
-        {
-            "name": "Config",
-            "port": 8581,
-            "auth": "form",
-            "theme": "orange",
-            "lightingMode": "dark",
-            "menuMode": "default",
-            "tempUnits": "c",
-            "lang": "auto",
-            "platform": "config"
+            "accessory": "Samsung Air Conditioner",
+            "name": "Air Conditioner",
+            "ip_address": "192.168.1.4",
+            "mac": "AA:BB:CC:DD:EE:FF",
+            "token": "abcdefgh",
+            "skip_certificate": false 
         }
     ]
 }
