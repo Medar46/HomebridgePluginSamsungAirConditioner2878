@@ -7,6 +7,7 @@
     },
     "accessories": [
         {
+            "platform": "Samsung Air Conditioner",
             "accessory": "Samsung Air Conditioner",
             "name": "Air Conditioner",
             "ip_address": "192.168.1.4",
