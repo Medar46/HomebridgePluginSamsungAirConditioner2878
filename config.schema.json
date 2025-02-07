@@ -11,7 +11,7 @@
       },
       "accessory": {
         "type": "string",
-        "default": "Samsung Air Conditioner"
+        "default": "SamsungAirConditioner"
       },
       "ip_address": {
         "type": "string",
