@@ -1,7 +1,6 @@
 {
   "pluginAlias": "SamsungAirConditioner",
-  "pluginType": "platform",
-  "singular": true,
+  "pluginType": "accessory",
   "schema": {
     "type": "object",
     "properties": {
