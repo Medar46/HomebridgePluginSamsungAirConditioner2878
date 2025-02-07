@@ -32,6 +32,6 @@
         "description": "Flag to skip certificate validation."
       }
     },
-    "required": ["name", "accessory", "ip_address", "mac", "token"]
+    "required": ["name", "accessory", "ip_address", "mac", "token","skip_certificate"]
   }
 }
