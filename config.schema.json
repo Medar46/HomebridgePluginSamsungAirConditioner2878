@@ -10,29 +10,38 @@
         "required": true,
         "default": "Samsung Air Conditioner"
       },
-      "accessory": {
-        "type": "string",
-        "default": "Samsung Air Conditioner"
-      },
-      "ip_address": {
-        "type": "string",
-        "format": "ipv4",
-        "description": "The IP address of the accessory."
-      },
-      "mac": {
-        "type": "string",
-        "description": "The MAC address of the accessory."
-      },
-      "token": {
-        "type": "string",
-        "description": "The token for authentication."
-      },
-      "skip_certificate": {
-        "type": "boolean",
-        "description": "Flag to skip certificate validation.",
-        "default": false
+      "accessories": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "accessory": {
+              "type": "string",
+              "default": "Samsung Air Conditioner"
+            },
+            "ip_address": {
+              "type": "string",
+              "format": "ipv4",
+              "description": "The IP address of the accessory."
+            },
+            "mac": {
+              "type": "string",
+              "description": "The MAC address of the accessory."
+            },
+            "token": {
+              "type": "string",
+              "description": "The token for authentication."
+            },
+            "skip_certificate": {
+              "type": "boolean",
+              "description": "Flag to skip certificate validation.",
+              "default": false
+            }
+          },
+          "required": ["accessory", "ip_address", "mac", "token", "skip_certificate"]
+        }
       }
     },
-    "required": ["name", "accessory", "ip_address", "mac", "token"]
+    "required": ["name", "accessories"]
   }
 }
