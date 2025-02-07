@@ -1,0 +1,38 @@
+{
+  "pluginAlias": "SamsungAirConditioner",
+  "pluginType": "platform",
+  "singular": true,
+  "schema": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "required": true,
+        "default": "Samsung Air Conditioner"
+      },
+      "accessory": {
+        "type": "string",
+        "default": "Samsung Air Conditioner"
+      },
+      "ip_address": {
+        "type": "string",
+        "format": "ipv4",
+        "description": "The IP address of the accessory."
+      },
+      "mac": {
+        "type": "string",
+        "description": "The MAC address of the accessory."
+      },
+      "token": {
+        "type": "string",
+        "description": "The token for authentication."
+      },
+      "skip_certificate": {
+        "type": "boolean",
+        "description": "Flag to skip certificate validation.",
+        "default": false
+      }
+    },
+    "required": ["name", "accessory", "ip_address", "mac", "token"]
+  }
+}
