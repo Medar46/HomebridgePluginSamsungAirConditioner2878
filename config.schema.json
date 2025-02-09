@@ -4,6 +4,11 @@
   "schema": {
     "type": "object",
     "properties": {
+      "accessory": {
+        "type": "string",
+        "const": "Samsung Air Conditioner",
+        "description": "This value is fixed and cannot be changed."
+      },
       "name": {
         "title": "Accessory Name",
         "type": "string",
@@ -37,6 +42,6 @@
         "description": "Enable this if the certificate validation needs to be bypassed."
       }
     },
-    "required": ["name", "ip_address", "mac", "token"]
+    "required": ["accessory", "name", "ip_address", "mac", "token"]
   }
 }
