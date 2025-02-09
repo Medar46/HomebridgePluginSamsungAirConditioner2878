@@ -1,13 +1,13 @@
 {
-  "pluginAlias": "homebridge-plugin-samsung-air-conditioner2878",
+  "pluginAlias": "Samsung Air Conditioner",
   "pluginType": "accessory",
   "schema": {
     "type": "object",
     "properties": {
       "accessory": {
         "type": "string",
-        "const": "Samsung Air Conditioner",
-        "description": "This value is fixed and cannot be changed."
+        "default": "Samsung Air Conditioner",
+        "description": "SET ALWAYS Samsung Air Conditioner "
       },
       "name": {
         "title": "Accessory Name",
