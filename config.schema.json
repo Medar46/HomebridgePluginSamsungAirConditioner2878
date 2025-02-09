@@ -1,0 +1,50 @@
+{
+  "pluginAlias": "homebridge-plugin-samsung-air-conditioner2878",
+  "pluginType": "accessory",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "title": "Accessory Name",
+        "type": "string",
+        "default": "Samsung Air Conditioner",
+        "description": "Set a friendly name for your air conditioner."
+      },
+      "ip_address": {
+        "title": "Device IP Address",
+        "type": "string",
+        "format": "ipv4",
+        "placeholder": "192.168.1.x",
+        "description": "Enter the local IP address of the Samsung AC."
+      },
+      "mac": {
+        "title": "Device MAC Address",
+        "type": "string",
+        "pattern": "^(?:[0-9A-Fa-f]{2}:){5}[0-9A-Fa-f]{2}$",
+        "placeholder": "AA:BB:CC:DD:EE:FF",
+        "description": "Enter the MAC address of the Samsung AC."
+      },
+      "token": {
+        "title": "Authentication Token",
+        "type": "string",
+        "placeholder": "Your Samsung AC Token",
+        "description": "Enter the authentication token to connect to the AC."
+      },
+      "skip_certificate": {
+        "title": "Skip SSL Certificate Validation",
+        "type": "boolean",
+        "default": false,
+        "description": "Enable this if the certificate validation needs to be bypassed."
+      },
+      "get_token": {
+        "title": "Retrieve Token",
+        "type": "button",
+        "buttonText": "Get Token",
+        "description": "Click to retrieve the authentication token automatically.",
+        "action": "run",
+        "command": "node /path/to/ac-get-token.js {ip_address}"
+      }
+    },
+    "required": ["name", "ip_address", "mac", "token"]
+  }
+}
