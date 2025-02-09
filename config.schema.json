@@ -35,14 +35,6 @@
         "type": "boolean",
         "default": false,
         "description": "Enable this if the certificate validation needs to be bypassed."
-      },
-      "get_token": {
-        "title": "Retrieve Token",
-        "type": "button",
-        "buttonText": "Get Token",
-        "description": "Click to retrieve the authentication token automatically.",
-        "action": "run",
-        "command": "node /path/to/ac-get-token.js {ip_address}"
       }
     },
     "required": ["name", "ip_address", "mac", "token"]
