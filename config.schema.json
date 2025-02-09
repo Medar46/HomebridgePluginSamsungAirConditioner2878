@@ -6,8 +6,8 @@
     "properties": {
       "accessory": {
         "type": "string",
-        "default": "Samsung Air Conditioner",
-        "description": "SET ALWAYS Samsung Air Conditioner "
+        "const": "Samsung Air Conditioner",
+        "description": "This accessory name is fixed and cannot be changed."
       },
       "name": {
         "title": "Accessory Name",
