@@ -40,6 +40,12 @@
         "type": "boolean",
         "default": false,
         "description": "Enable this if the certificate validation needs to be bypassed."
+      },
+      "debug": {
+        "title": "Enable Debug Mode",
+        "type": "boolean",
+        "default": false,
+        "description": "Enable detailed logging for debugging purposes."
       }
     },
     "required": ["accessory", "name", "ip_address", "mac", "token"]
